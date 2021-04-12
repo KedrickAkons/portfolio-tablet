@@ -1,0 +1,253 @@
+/* CSS Commment*/
+
+/* Starter Code
+main{
+  margin-bottom: 100px;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+tr{
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+
+ End of Starter Code*/
+
+ nav{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .current{
+  /* color: #0076BA; */
+  text-decoration: underline; /*This is to underline on Safari*/
+  text-decoration: underline 3px;
+  text-transform: uppercase;
+}
+
+
+/*header{
+    position: fixed;
+    top: 0;
+}*/
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body p :last-child{
+    border: 3px solid black;
+}
+
+p {
+  margin-bottom: 3%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+figcaption {
+  padding-bottom: 25px;
+}
+/* main{
+    
+} */
+
+.personas{
+  display: grid;
+  grid-template-columns: auto;
+  grid-column: 1 / 1;
+  justify-content: center;
+}
+
+.story_map-flow_chart{
+  display: grid;
+  grid-template-columns: auto;
+  grid-column: 1 / 1;
+}
+
+.design_solution{
+  display: grid;
+  grid-template-columns: auto;
+  grid-column: 1 / 2;
+}
+
+p a{
+  /* color: white; */
+  background-color: #0076BA; /* Blue */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* I got this code from w3schools. 
+  (https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic) */
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    min-height: 50px;
+}
+
+@media screen and (min-width: 800px){
+
+  header {
+    display: flex; 
+    /* align-self: flex-start; */
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+    margin-bottom: 0px;
+    /* padding: 15px; */
+    padding-bottom: 30px;
+    align-items: center;
+  }
+
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  .nav_item, .current {
+    padding-right: 50px;
+  }
+
+  .site_name {
+    font-size: 30px;
+  } 
+
+  .design_solution{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 1 / 2;
+    justify-content: space-around;
+    margin: 8%;
+  }
+
+  .design_solution img {
+    padding-bottom: 40px;
+  }
+
+  .story_map-flow_chart img{
+    max-width: 85%;
+  }
+
+  .story_map-flow_chart{
+    justify-items: center;
+  }
+
+  .overview_section, .project_title {
+    background-color: rgb(70, 62, 62);
+    padding-bottom: 3%;
+    padding-top: 3%;
+
+  }
+
+  p {
+    margin-bottom: 3%;
+  }
+
+  .skip {
+    left: 0;
+    padding: 7px;
+    /* -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out; */
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+  }
+
+  .skip:focus{
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    text-align:center;
+    z-index:999;
+  } /* Code from lines 184-192 are from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/
+  with adjustments*/
+
+  @media screen and (prefers-reduced-motion){
+    /*Your code here again.*/ 
+      .skip, .skip:focus{
+        animation: none;
+      }
+    }
+
+  /*.nav_links{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* padding-left: 0;
+    margin-bottom: 0; */
+    /* list-style: none; 
+    
+  } */
+}
+
+
+/*CSS Code for Sdebar on Desktop view
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
